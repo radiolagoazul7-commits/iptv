@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPTV Player 📺</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>📺 IPTV Player</h1>
+            <p>Seu aplicativo para reproduzir canais IPTV</p>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main">
+            <!-- Upload Section -->
+            <section class="section upload-section">
+                <h2>Importar Lista</h2>
+                <div class="input-group">
+                    <input type="text" id="urlInput" placeholder="Cole a URL de uma lista M3U..." class="input">
+                    <button id="loadFromUrl" class="btn btn-primary">Carregar da URL</button>
+                </div>
+                <div class="divider">OU</div>
+                <div class="file-input-group">
+                    <input type="file" id="fileInput" accept=".m3u,.m3u8" class="file-input">
+                    <button id="loadFromFile" class="btn btn-secondary">Carregar Arquivo</button>
+                </div>
+            </section>
+
+            <!-- Channels Section -->
+            <section class="section channels-section">
+                <h2>Canais</h2>
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="🔍 Pesquisar canais..." class="search-input">
+                </div>
+                <div id="channelsList" class="channels-list">
+                    <p class="empty-message">Nenhum canal carregado. Importe uma lista M3U para começar.</p>
+                </div>
+            </section>
+
+            <!-- Saved Lists -->
+            <section class="section lists-section">
+                <h2>Listas Salvas</h2>
+                <div id="savedLists" class="saved-lists">
+                    <p class="empty-message">Nenhuma lista salva ainda.</p>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>IPTV Player © 2026 | <a href="https://github.com/radiolagoazul7-commits/iptv" target="_blank">GitHub</a></p>
+        </footer>
+    </div>
+
+    <!-- Modal para Salvar Lista -->
+    <div id="saveModal" class="modal">
+        <div class="modal-content">
+            <h2>Salvar Lista</h2>
+            <input type="text" id="listName" placeholder="Digite o nome da lista..." class="input">
+            <div class="modal-buttons">
+                <button id="confirmSave" class="btn btn-primary">Salvar</button>
+                <button id="cancelSave" class="btn btn-secondary">Cancelar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
