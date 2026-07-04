@@ -1,0 +1,13 @@
+#EXTM3U
+
+# EXTINF : -1  tvg-logo = " https://a.imagem.app/Gsv0i2.png "  group-title = " Seriado "  pltv-subgroup = " 2 Garotas em Apuros " , 2GEA T1|EP01
+https://video01.logicahost.com.br/tvlagoazul/tvlagoazul/chunklist_w1664341379.m3u8
+
+# EXTINF : -1  tvg-logo = " https://a.imagem.app/Gsv0i2.png "  group-title = " Seriado "  pltv-subgroup = " 2 Garotas em Apuros " , 2GEA T1|EP01
+http://sp-66906890.eagflix.sbs/live/66898149/34754656/1986.m3u8?token=VEt6aVB2WkpGd05rNDNS
+
+# EXTINF : -1  tvg-logo = " https://a.imagem.app/Gsv0i2.png "  group-title = " Seriado "  pltv-subgroup = " 2 Garotas em Apuros " , 2GEA T1|EP01
+http://ash-232375945.eagflix.sbs/live/66898149/34754656/2281.m3u8?token=MjFpNmhnaFVZVEI2d1Vy
+
+# EXTINF : -1  tvg-logo = " https://a.imagem.app/Gsv0i2.png "  group-title = " Seriado "  pltv-subgroup = " 2 Garotas em Apuros " , 2GEA T1|EP01
+http://cdnone.eagproxy.sbs/live/66898149/34754656/20985.m3u8?token=T1VSYTZaR2huNDdxVDNx
