@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard 🌤️</title>
+    <link rel="stylesheet" href="weather-style.css">
+</head>
+<body>
+    <div class="weather-container">
+        <!-- Header -->
+        <header class="weather-header">
+            <h1>🌤️ Weather Dashboard</h1>
+            <p>Real-time weather information from around the world</p>
+        </header>
+
+        <!-- Search Section -->
+        <section class="search-section">
+            <div class="search-box">
+                <input 
+                    type="text" 
+                    id="cityInput" 
+                    class="city-search" 
+                    placeholder="🔍 Search for a city..."
+                    autocomplete="off"
+                >
+                <button id="searchBtn" class="btn btn-search">Search</button>
+                <button id="locationBtn" class="btn btn-location">📍 My Location</button>
+            </div>
+            <div id="suggestions" class="suggestions-list"></div>
+        </section>
+
+        <!-- Current Weather Section -->
+        <section class="current-weather">
+            <div id="currentWeatherContent" class="weather-content">
+                <div class="empty-state">Enter a city name to see weather information</div>
+            </div>
+        </section>
+
+        <!-- Forecast Section -->
+        <section class="forecast-section">
+            <h2>📅 5-Day Forecast</h2>
+            <div id="forecastGrid" class="forecast-grid">
+                <div class="empty-state">Forecast data will appear here</div>
+            </div>
+        </section>
+
+        <!-- Saved Cities -->
+        <section class="saved-cities-section">
+            <h2>⭐ Saved Cities</h2>
+            <div id="savedCitiesList" class="saved-cities-grid">
+                <div class="empty-state">No saved cities yet</div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Loading Spinner -->
+    <div id="loadingSpinner" class="loading-spinner">
+        <div class="spinner"></div>
+        <p>Loading weather data...</p>
+    </div>
+
+    <!-- Error Toast -->
+    <div id="errorToast" class="toast toast-error"></div>
+
+    <script src="weather-app.js"></script>
+</body>
+</html>
